@@ -1,0 +1,38 @@
+.box {
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: 700;
+    box-sizing: border-box;
+    /* flex-basis: 350px; */
+     /* flex-shrink 의 deafult value는 1, 만약 0이면 줄어들지 않음*/ 
+    /* flex-grow: 1; */
+    flex : 1 1 200px; /*flex-grow, flex-shrink, flex-basis 순서*/
+}
+
+
+.box-1 {
+    background-color: red;
+    /* flex-shrink: 0; */
+}
+.box-2 {
+    background-color: orangered;
+    /* flex-shrink: 0; */
+    /* flex-shrink: 2; */
+    flex: 2 1 500px;
+}
+.box-3 {
+    background-color:  orange;
+    /* flex-shrink: 2; */
+}
+.box-4 {
+    background-color :yellow;
+}
+
+
+.container {
+    display:flex;
+    border: 10px solid black;
+    height: 100vh;
+    flex-direction: row;
+}
